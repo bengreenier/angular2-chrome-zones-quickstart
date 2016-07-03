@@ -1,0 +1,12 @@
+ {
+    "manifest_version": 2,
+    "version": "0.0.0",
+    "name": "angular2-chrome-zones",
+    "browser_action": {
+        "default_popup": "index.html"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
