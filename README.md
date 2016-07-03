@@ -1,5 +1,21 @@
 # Angular 2 QuickStart Source
 
+> This quickstart fork has been changed to demonstrate an angular2 chrome extension
+
+## Chrome Extension
+
+When running angular2 as a chrome extension, you need to use something like [bengreenier/chrome-zones](https://github.com/bengreenier/chrome-zones)
+to wrap `chrome.api` callbacks to correctly run in the valid zone. If you don't do this, you won't be able to successfully modify
+class properties and have angular2 track that they've changed and re-render.
+
+This repo demonstrates that behavior. To run:
+
++ Clone the repo
++ tsc
++ Load the directory as an unpacked chrome extension at [chrome://extensions](chrome://extensions)
+
+## Original Content
+
 This repository holds the TypeScript source code of the [angular.io quickstart](https://angular.io/docs/ts/latest/quickstart.html),
 the foundation for most of the documentation samples and potentially a good starting point for your application.
 
